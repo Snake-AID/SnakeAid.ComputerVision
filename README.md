@@ -1,7 +1,7 @@
 ![SnakeAIdBanner](docs/img/SnakeAI.png)
 # SnakeAid ComputerVision AI Model Training
-![TechStack](docs/img/TechStack.png)
-
+![TechStackTrainer](docs/img/TechStackTrainer.png)
+![TechStackDeployment](docs/img/TechStackDeployment.png)
 # Tech Stack Overview
 
 This repository focuses on the **training side of the SnakeAid Computer Vision AI system**, covering data preparation, model training, experiment tracking, and deployment-oriented model packaging.
