@@ -14,6 +14,17 @@ The tech stack is organized following a **practical AI / MLOps pipeline**, from 
 
 ### **Roboflow**
 
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Roboflow/AnnoteManage.png" alt="Anotating" style="max-width: 100%; height: auto;"><br><small>Annote Manage</small></td>
+    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Roboflow/DataVersion.png" alt="Labeling" style="max-width: 100%; height: auto;"><br><small>Data Versioning</small></td>
+  </tr>
+  <tr>
+    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Roboflow/Annotating.png" alt="Anotating" style="max-width: 100%; height: auto;"><br><small>Anotating</small></td>
+    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Roboflow/Labeling.png" alt="Labeling" style="max-width: 100%; height: auto;"><br><small>Labeling</small></td>
+  </tr>
+</table>
+
 Roboflow is used for:
 
 * Image annotation (Bounding Box / Segmentation)
@@ -50,6 +61,17 @@ YOLO is chosen due to its balance between:
 
 ### **Google Colab**
 
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Colab/Training.png" alt="Training" style="max-width: 100%; height: auto;"><br><small>Training</small></td>
+    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Colab/Evaluate.png" alt="Evaluate" style="max-width: 100%; height: auto;"><br><small>Evaluate</small></td>
+  </tr>
+  <tr>
+    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Colab/ColabPro.png" alt="ColabPro" style="max-width: 100%; height: auto;"><br><small>ColabPro</small></td>
+    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Colab/Runtimes.png" alt="Runtimes" style="max-width: 100%; height: auto;"><br><small>Runtimes</small></td>
+  </tr>
+</table>
+
 Google Colab serves as the **primary training environment**, providing:
 
 * Easy access to GPU resources
@@ -81,7 +103,7 @@ SageMaker usage in this project is **experimental and educational**, not the pri
 ---
 
 ## MLOps & Experiment Management
-
+![ClearML](docs/img/Techstack/ClearML/home.png)
 ### **ClearML**
 
 ClearML acts as the **central MLOps backbone** of the project.
