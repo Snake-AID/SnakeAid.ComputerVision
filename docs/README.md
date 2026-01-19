@@ -1,7 +1,7 @@
-![SnakeAIdBanner](docs/img/SnakeAI.png)
+![SnakeAIdBanner](img/SnakeAI.png)
 # SnakeAid ComputerVision AI Model Training
-![TechStackTrainer](docs/img/TechStackTrainer.png)
-![TechStackDeployment](docs/img/TechStackDeployment.png)
+![TechStackTrainer](img/TechStackTrainer.png)
+![TechStackDeployment](img/TechStackDeployment.png)
 # Tech Stack Overview
 
 ## Documentation
