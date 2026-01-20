@@ -1,8 +1,25 @@
-![SnakeAIdBanner](img/SnakeAI.png)
+![SnakeAIdBanner](docs/img/SnakeAI.png)
 # SnakeAid ComputerVision AI Model Training
-![TechStackTrainer](img/TechStackTrainer.png)
-![TechStackDeployment](img/TechStackDeployment.png)
+![TechStackTrainer](docs/img/TechStackTrainer.png)
+![TechStackDeployment](docs/img/TechStackDeployment.png)
 # Tech Stack Overview
+
+## Project Overview: SnakeAid Platform
+
+SnakeAid is an AI-powered platform for snakebite first aid and rescue support. It connects patients, snake rescuers, snake experts, and administrators to improve identification, guidance, and response speed.
+
+Core capabilities include:
+* Step-by-step first aid guidance and safety warnings
+* AI-based snake species identification and bite severity assessment
+* SOS with GPS sharing and rescue team tracking
+* Expert verification and remote consultation
+* Incident reporting, analytics, and treatment facility lookup
+
+## Where This Repository Fits
+
+This repository focuses on the computer vision training pipeline that powers SnakeAid's AI features. It covers dataset preparation, model training, experiment tracking, and deployment-ready model packaging. The outputs here (trained weights, metrics, and export artifacts) are consumed by the broader SnakeAid platform for snake identification and related AI assistance.
+
+For full project scope and product modules, see the project-level documentation in the `SnakeAidDocs` repository.
 
 ## Documentation
 
