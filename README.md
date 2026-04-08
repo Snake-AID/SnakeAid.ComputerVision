@@ -31,6 +31,51 @@ npx docsify-cli@latest serve docs
 
 Or install once with `npm install -g docsify-cli` and run `docsify serve docs`. The site mirrors the training pipeline, experiment tracking, and artifacts in a navigable sidebar.
 
+## Repository Layout
+
+```text
+.
+|-- docs/                         # Docsify documentation site
+|-- notebooks/
+|   |-- training/                 # YOLO training notebook history
+|   `-- validation/               # Dataset and label verification notebooks
+|-- tools/
+|   `-- colab-shutdown-webhook/   # Local webhook helper for Colab completion
+`-- README.md                     # Repo entrypoint
+```
+
+## Notebooks
+
+Training notebooks:
+
+- `notebooks/training/SnakeTraining_V1_YOLOv12_Khiem.ipynb`
+- `notebooks/training/SnakeTraining_V2_YOLOv12_Khiem.ipynb`
+- `notebooks/training/SnakeTraining_V3_YOLOv12_Khiem_Bbox5000.ipynb`
+- `notebooks/training/SnakeTraining_V4_YOLOv12_Khiem_Bbox5000.ipynb`
+- `notebooks/training/SnakeTraining_V5_YOLOv12_Khiem_Bbox5000.ipynb`
+- `notebooks/training/SnakeTraining_V6_YOLOv12_Khiem_Bbox5000.ipynb`
+- `notebooks/training/SnakeTraining_V7_YOLOv12_Khiem_Bbox5291.ipynb`
+- `notebooks/training/SnakeTraining_V8_YOLOv12_Khiem_Bbox5291.ipynb`
+
+Validation notebooks:
+
+- `notebooks/validation/SnakeAId_LabelVerify.ipynb`
+- `notebooks/validation/SnakeDataset_SegmentationVerify.ipynb`
+
+## Local Tools
+
+The Colab shutdown webhook helper lives in:
+
+```text
+tools/colab-shutdown-webhook/
+```
+
+Run it on Windows with:
+
+```bat
+tools\colab-shutdown-webhook\run-webhook.bat
+```
+
 This repository focuses on the **training side of the SnakeAid Computer Vision AI system**, covering data preparation, model training, experiment tracking, and deployment-oriented model packaging.
 
 The tech stack is organized following a **practical AI / MLOps pipeline**, from data labeling to production-ready models.

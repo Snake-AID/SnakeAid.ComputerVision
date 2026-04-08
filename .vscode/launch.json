@@ -6,7 +6,7 @@
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["docsify-cli@latest", "serve", "Docs"],
+      "runtimeArgs": ["docsify-cli@latest", "serve", "docs"],
       "console": "integratedTerminal",
       "cwd": "${workspaceFolder}"
     }

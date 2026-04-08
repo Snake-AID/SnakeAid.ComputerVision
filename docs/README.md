@@ -1,7 +1,7 @@
-![SnakeAIdBanner](docs/img/SnakeAI.png)
+![SnakeAIdBanner](img/SnakeAI.png)
 # SnakeAid ComputerVision AI Model Training
-![TechStackTrainer](docs/img/TechStackTrainer.png)
-![TechStackDeployment](docs/img/TechStackDeployment.png)
+![TechStackTrainer](img/TechStackTrainer.png)
+![TechStackDeployment](img/TechStackDeployment.png)
 # Tech Stack Overview
 
 ## Project Overview: SnakeAid Platform
@@ -43,12 +43,12 @@ The tech stack is organized following a **practical AI / MLOps pipeline**, from 
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Roboflow/AnnoteManage.png" alt="Anotating" style="max-width: 100%; height: auto;"><br><small>Annote Manage</small></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Roboflow/DataVersion.png" alt="Labeling" style="max-width: 100%; height: auto;"><br><small>Data Versioning</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Techstack/Roboflow/AnnoteManage.png" alt="Anotating" style="max-width: 100%; height: auto;"><br><small>Annote Manage</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Techstack/Roboflow/DataVersion.png" alt="Labeling" style="max-width: 100%; height: auto;"><br><small>Data Versioning</small></td>
   </tr>
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Roboflow/Annotating.png" alt="Anotating" style="max-width: 100%; height: auto;"><br><small>Anotating</small></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Roboflow/Labeling.png" alt="Labeling" style="max-width: 100%; height: auto;"><br><small>Labeling</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Techstack/Roboflow/Annotating.png" alt="Anotating" style="max-width: 100%; height: auto;"><br><small>Anotating</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Techstack/Roboflow/Labeling.png" alt="Labeling" style="max-width: 100%; height: auto;"><br><small>Labeling</small></td>
   </tr>
 </table>
 
@@ -90,12 +90,12 @@ YOLO is chosen due to its balance between:
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Colab/Training.png" alt="Training" style="max-width: 100%; height: auto;"><br><small>Training</small></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Colab/Evaluate.png" alt="Evaluate" style="max-width: 100%; height: auto;"><br><small>Evaluate</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Techstack/Colab/Training.png" alt="Training" style="max-width: 100%; height: auto;"><br><small>Training</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Techstack/Colab/Evaluate.png" alt="Evaluate" style="max-width: 100%; height: auto;"><br><small>Evaluate</small></td>
   </tr>
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Colab/ColabPro.png" alt="ColabPro" style="max-width: 100%; height: auto;"><br><small>ColabPro</small></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Techstack/Colab/Runtimes.png" alt="Runtimes" style="max-width: 100%; height: auto;"><br><small>Runtimes</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Techstack/Colab/ColabPro.png" alt="ColabPro" style="max-width: 100%; height: auto;"><br><small>ColabPro</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Techstack/Colab/Runtimes.png" alt="Runtimes" style="max-width: 100%; height: auto;"><br><small>Runtimes</small></td>
   </tr>
 </table>
 
@@ -130,7 +130,7 @@ SageMaker usage in this project is **experimental and educational**, not the pri
 ---
 
 ## MLOps & Experiment Management
-![ClearML](docs/img/Techstack/ClearML/home.png)
+![ClearML](img/Techstack/ClearML/home.png)
 ### **ClearML**
 
 ClearML acts as the **central MLOps backbone** of the project.
@@ -320,11 +320,11 @@ Mosaic is disabled during the final epochs (`close_mosaic=10`) to allow fine-tun
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/train_batch0.jpg" alt="train_batch0" style="max-width: 100%; height: auto;"><br><small>train_batch0</small></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/train_batch1.jpg" alt="train_batch1" style="max-width: 100%; height: auto;"><br><small>train_batch1</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/train_batch0.jpg" alt="train_batch0" style="max-width: 100%; height: auto;"><br><small>train_batch0</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/train_batch1.jpg" alt="train_batch1" style="max-width: 100%; height: auto;"><br><small>train_batch1</small></td>
   </tr>
   <tr>
-    <td colspan="2" style="border: none; text-align: center;"><img src="docs/img/Train/train_batch2.jpg" alt="train_batch2" style="max-width: 50%; height: auto;"><br><small>train_batch2</small></td>
+    <td colspan="2" style="border: none; text-align: center;"><img src="img/Train/train_batch2.jpg" alt="train_batch2" style="max-width: 50%; height: auto;"><br><small>train_batch2</small></td>
   </tr>
 </table>
 
@@ -397,12 +397,12 @@ A lower mAP50-95 does **not** imply poor performance — it reflects a harder ev
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/P_curve.png" alt="P_curve.png" style="max-width: 100%; height: auto;"></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/R_curve.png" alt="R_curve.png" style="max-width: 100%; height: auto;"></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/P_curve.png" alt="P_curve.png" style="max-width: 100%; height: auto;"></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/R_curve.png" alt="R_curve.png" style="max-width: 100%; height: auto;"></td>
   </tr>
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/PR_curve.png" alt="PR_curve.png" style="max-width: 100%; height: auto;"></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/F1_curve.png" alt="F1_curve.png" style="max-width: 100%; height: auto;"></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/PR_curve.png" alt="PR_curve.png" style="max-width: 100%; height: auto;"></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/F1_curve.png" alt="F1_curve.png" style="max-width: 100%; height: auto;"></td>
   </tr>
 </table>
 
@@ -416,8 +416,8 @@ YOLO training generates multiple artifacts that help interpret model behavior.
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/confusion_matrix.png" alt="confusion_matrix" style="max-width: 100%; height: auto;"><br><small>confusion_matrix</small></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/confusion_matrix_normalized.png" alt="confusion_matrix_normalized" style="max-width: 100%; height: auto;"><br><small>confusion_matrix_normalized</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/confusion_matrix.png" alt="confusion_matrix" style="max-width: 100%; height: auto;"><br><small>confusion_matrix</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/confusion_matrix_normalized.png" alt="confusion_matrix_normalized" style="max-width: 100%; height: auto;"><br><small>confusion_matrix_normalized</small></td>
   </tr>
 </table>
 
@@ -426,7 +426,7 @@ Shows which classes the model confuses with each other and highlights class imba
 ---
 
 ### Training Curves
-![results](docs/img/Train/results.png)
+![results](img/Train/results.png)
 
 Visualize:
 * loss convergence,
@@ -439,8 +439,8 @@ Visualize:
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/labels.jpg" alt="labels" style="max-width: 100%; height: auto;"></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/labels_correlogram.jpg" alt="labels_correlogram" style="max-width: 100%; height: auto;"></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/labels.jpg" alt="labels" style="max-width: 100%; height: auto;"></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/labels_correlogram.jpg" alt="labels_correlogram" style="max-width: 100%; height: auto;"></td>
   </tr>
 </table>
 
@@ -455,16 +455,16 @@ Reveal:
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/val_batch0_labels.jpg" alt="val_batch0_labels" style="max-width: 100%; height: auto;"><br><small>val_batch0_labels</small></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/val_batch0_pred.jpg" alt="val_batch0_pred" style="max-width: 100%; height: auto;"><br><small>val_batch0_pred</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/val_batch0_labels.jpg" alt="val_batch0_labels" style="max-width: 100%; height: auto;"><br><small>val_batch0_labels</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/val_batch0_pred.jpg" alt="val_batch0_pred" style="max-width: 100%; height: auto;"><br><small>val_batch0_pred</small></td>
   </tr>
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/val_batch1_labels.jpg" alt="val_batch1_labels" style="max-width: 100%; height: auto;"><br><small>val_batch1_labels</small></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/val_batch1_pred.jpg" alt="val_batch1_pred" style="max-width: 100%; height: auto;"><br><small>val_batch1_pred</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/val_batch1_labels.jpg" alt="val_batch1_labels" style="max-width: 100%; height: auto;"><br><small>val_batch1_labels</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/val_batch1_pred.jpg" alt="val_batch1_pred" style="max-width: 100%; height: auto;"><br><small>val_batch1_pred</small></td>
   </tr>
   <tr>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/val_batch2_labels.jpg" alt="val_batch2_labels" style="max-width: 100%; height: auto;"><br><small>val_batch2_labels</small></td>
-    <td style="border: none; text-align: center;"><img src="docs/img/Train/val_batch2_pred.jpg" alt="val_batch2_pred" style="max-width: 100%; height: auto;"><br><small>val_batch2_pred</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/val_batch2_labels.jpg" alt="val_batch2_labels" style="max-width: 100%; height: auto;"><br><small>val_batch2_labels</small></td>
+    <td style="border: none; text-align: center;"><img src="img/Train/val_batch2_pred.jpg" alt="val_batch2_pred" style="max-width: 100%; height: auto;"><br><small>val_batch2_pred</small></td>
   </tr>
 </table>
 

@@ -2,6 +2,7 @@
 
 - Overview
   - [Project overview](overview.md)
+  - [Repository layout](repository-layout.md)
 
 - Data and labeling
   - [Roboflow workflow](data-labeling.md)
