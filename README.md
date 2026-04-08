@@ -23,51 +23,128 @@ For full project scope and product modules, see the project-level documentation 
 
 ---
 
-## Hugging Face Hub Artifacts
+## 🤗 Hugging Face Hub
 
-Hugging Face Hub is now the public source of truth for the selected SnakeAid dataset versions and PyTorch checkpoints that were migrated from the local workspace.
+SnakeAid datasets and trained YOLO checkpoints are published as verified Hugging Face Hub artifacts under `the-khiem7`.
 
-The migration record lives in:
+![Status](https://img.shields.io/badge/source%20of%20truth-Hugging%20Face-yellow)
+![Datasets](https://img.shields.io/badge/datasets-5-blue)
+![Models](https://img.shields.io/badge/models-6-green)
+![Verification](https://img.shields.io/badge/verification-all_ok-success)
 
-```text
-huggingface/
-|-- README.md                                  # Migration history, repository map, known issues
-`-- HUGGINGFACE_SOURCE_OF_TRUTH_REPORT.json    # Final verification report
+### 📊 System Status Dashboard
+
+| Item | Value |
+| --- | --- |
+| Hugging Face account | `the-khiem7` |
+| Dataset repositories | `5` |
+| Model repositories | `6` |
+| Verification status | `all_ok: true` |
+| Last verified | `2026-04-08` |
+| Local verification report | `huggingface/HUGGINGFACE_SOURCE_OF_TRUTH_REPORT.json` |
+| Migration record | `huggingface/README.md` |
+| Intentionally excluded checkpoint | `SnakeAI_5k_120e.pt` |
+
+### 🧩 Pipeline Overview
+
+```mermaid
+flowchart LR
+    A[Raw Snake Images] --> B[YOLO Dataset Versions]
+    B --> C["Hugging Face Hub"]
+    C --> D[Colab / SageMaker Training]
+    D --> E[YOLO PyTorch Checkpoints]
+    E --> F[ONNX / CPU Inference]
 ```
 
-Current verified status:
+### 📚 Datasets
 
-* Hugging Face account: `the-khiem7`
-* Migration and verification date: `2026-04-08`
-* Dataset repositories uploaded: `5`
-* Model repositories uploaded: `6`
-* Final source-of-truth result: `all_ok: true`
-* Intentionally excluded checkpoint: `SnakeAI_5k_120e.pt`
+#### SnakeAid YOLOv12 300 Masking
 
-Verified dataset repositories:
+* **Hub:** https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-300-masking
+* **Type:** Segmentation / masking dataset
+* **Payload:** `710` verified files, `353` images
 
-| Dataset | Hugging Face repository |
-| --- | --- |
-| 300 masking dataset | https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-300-masking |
-| 5000 bbox dataset | https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5000-bbox |
-| 5000 masking dataset | https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5000-masking |
-| 5291 bbox dataset | https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5291-bbox |
-| 5291 bbox complete dataset | https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5291-bbox-complete |
+#### SnakeAid YOLOv12 5000 BBox
 
-Verified model repositories:
+* **Hub:** https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5000-bbox
+* **Type:** Bounding box detection dataset
+* **Payload:** `10,586` verified files, `5,291` images
 
-| Model checkpoint | Hugging Face repository |
-| --- | --- |
-| YOLOv12n, 10 epochs, 300 masking | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12n-10e-300masking |
-| YOLOv12n, 10 epochs, 5000 masking | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12n-10e-5000masking |
-| YOLOv12s, 17 epochs, 5000 bbox | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12s-17e-5000bbox |
-| YOLOv12 V4, 5000 bbox | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-v4-5000bbox |
-| YOLOv12 V6, 40 epochs, 10 patience, 5291 bbox complete | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-v6-40e-10p-5291bbox-complete |
-| YOLOv12 H2, 120 epochs, 10 patience, 5291 bbox complete | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-h2-120e-10p-5291bbox-complete |
+#### SnakeAid YOLOv12 5000 Masking
 
-The verification report confirms that uploaded dataset payload files match the expected local files, forbidden cache/control files were not uploaded, and all selected `.pt` checkpoints match by size and Hugging Face LFS SHA256.
+* **Hub:** https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5000-masking
+* **Type:** Segmentation / masking dataset
+* **Payload:** `9,918` verified files, `4,957` images
 
-> **Role in pipeline:** Public dataset/checkpoint registry and verified artifact source of truth
+#### SnakeAid YOLOv12 5291 BBox
+
+* **Hub:** https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5291-bbox
+* **Type:** Bounding box detection dataset
+* **Payload:** `10,586` verified files, `5,291` images
+
+#### SnakeAid YOLOv12 5291 BBox Complete
+
+* **Hub:** https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5291-bbox-complete
+* **Type:** Complete bounding box detection dataset
+* **Payload:** `10,584` verified files, `5,291` images
+
+### 🤖 Models
+
+Install the runtime once before loading any checkpoint:
+
+```bash
+pip install ultralytics huggingface_hub
+```
+
+Use the same loading pattern for every model below by changing `repo_id` and `filename`:
+
+```python
+from huggingface_hub import hf_hub_download
+from ultralytics import YOLO
+
+repo_id = "the-khiem7/snakeaid-detect-yolov12-h2-120e-10p-5291bbox-complete"
+filename = "SnakeTraining_H2_YOLOv12_Khiem_Bbox5291Complete_120epoch_10patience_20251215_1346.pt"
+
+checkpoint = hf_hub_download(repo_id, filename)
+model = YOLO(checkpoint)
+results = model("path/to/snake-image.jpg")
+```
+
+#### YOLOv12n 10e 300 Masking
+
+* **Hub:** https://huggingface.co/the-khiem7/snakeaid-detect-yolov12n-10e-300masking
+* **Training:** YOLOv12n, `10` epochs, 300 masking dataset
+* **Checkpoint:** `SnakeAid_SnakeDetector_YOLOv12n_300Masking_10epoch_Khiem.pt`
+
+#### YOLOv12n 10e 5000 Masking
+
+* **Hub:** https://huggingface.co/the-khiem7/snakeaid-detect-yolov12n-10e-5000masking
+* **Training:** YOLOv12n, `10` epochs, 5000 masking dataset
+* **Checkpoint:** `SnakeAid_SnakeDetector_YOLOv12n_5000Masking_10epoch_Khiem.pt`
+
+#### YOLOv12s 17e 5000 BBox
+
+* **Hub:** https://huggingface.co/the-khiem7/snakeaid-detect-yolov12s-17e-5000bbox
+* **Training:** YOLOv12s, `17` epochs, 5000 bbox dataset
+* **Checkpoint:** `SnakeAid_SnakeDetector_YOLOv12s_5000Bbox_17epoch_Nhan.pt`
+
+#### YOLOv12 V4 5000 BBox
+
+* **Hub:** https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-v4-5000bbox
+* **Training:** YOLOv12 experiment 4, 5000 bbox dataset
+* **Checkpoint:** `SnakeTraining_V4_YOLOv12_Khiem_Bbox5000_20251213_1828.pt`
+
+#### YOLOv12 V6 40e 5291 BBox Complete
+
+* **Hub:** https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-v6-40e-10p-5291bbox-complete
+* **Training:** YOLOv12 experiment 6, `40` epochs, `10` patience, 5291 bbox complete dataset
+* **Checkpoint:** `SnakeTraining_V6_YOLOv12_Khiem_Bbox5291Complete_40epoch_10patience_20251215_0303.pt`
+
+#### YOLOv12 H2 120e 5291 BBox Complete
+
+* **Hub:** https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-h2-120e-10p-5291bbox-complete
+* **Training:** YOLOv12 **H**igh Performance Training (nVIDIA H100) experiment 2, `120` epochs, `10` patience, 5291 bbox complete dataset
+* **Checkpoint:** `SnakeTraining_H2_YOLOv12_Khiem_Bbox5291Complete_120epoch_10patience_20251215_1346.pt`
 
 ---
 
@@ -238,7 +315,7 @@ It is used for:
 * Artifact management (models, logs, results)
 * Ensuring reproducibility across training runs
 
-ClearML replaces ad-hoc storage solutions (e.g. Google Drive) as the **experiment tracking and training-time model registry**. Hugging Face Hub now acts as the public source of truth for the selected migrated datasets and checkpoints listed below.
+ClearML replaces ad-hoc storage solutions (e.g. Google Drive) as the **experiment tracking and training-time model registry**. Hugging Face Hub now acts as the public source of truth for the selected migrated datasets and checkpoints listed in the Hugging Face Hub section above.
 
 > **Role in pipeline:** Experiment tracking, model registry, and reproducibility
 
