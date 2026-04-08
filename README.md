@@ -21,6 +21,56 @@ This repository focuses on the computer vision training pipeline that powers Sna
 
 For full project scope and product modules, see the project-level documentation in the `SnakeAidDocs` repository.
 
+---
+
+## Hugging Face Hub Artifacts
+
+Hugging Face Hub is now the public source of truth for the selected SnakeAid dataset versions and PyTorch checkpoints that were migrated from the local workspace.
+
+The migration record lives in:
+
+```text
+huggingface/
+|-- README.md                                  # Migration history, repository map, known issues
+`-- HUGGINGFACE_SOURCE_OF_TRUTH_REPORT.json    # Final verification report
+```
+
+Current verified status:
+
+* Hugging Face account: `the-khiem7`
+* Migration and verification date: `2026-04-08`
+* Dataset repositories uploaded: `5`
+* Model repositories uploaded: `6`
+* Final source-of-truth result: `all_ok: true`
+* Intentionally excluded checkpoint: `SnakeAI_5k_120e.pt`
+
+Verified dataset repositories:
+
+| Dataset | Hugging Face repository |
+| --- | --- |
+| 300 masking dataset | https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-300-masking |
+| 5000 bbox dataset | https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5000-bbox |
+| 5000 masking dataset | https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5000-masking |
+| 5291 bbox dataset | https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5291-bbox |
+| 5291 bbox complete dataset | https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5291-bbox-complete |
+
+Verified model repositories:
+
+| Model checkpoint | Hugging Face repository |
+| --- | --- |
+| YOLOv12n, 10 epochs, 300 masking | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12n-10e-300masking |
+| YOLOv12n, 10 epochs, 5000 masking | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12n-10e-5000masking |
+| YOLOv12s, 17 epochs, 5000 bbox | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12s-17e-5000bbox |
+| YOLOv12 V4, 5000 bbox | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-v4-5000bbox |
+| YOLOv12 V6, 40 epochs, 10 patience, 5291 bbox complete | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-v6-40e-10p-5291bbox-complete |
+| YOLOv12 H2, 120 epochs, 10 patience, 5291 bbox complete | https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-h2-120e-10p-5291bbox-complete |
+
+The verification report confirms that uploaded dataset payload files match the expected local files, forbidden cache/control files were not uploaded, and all selected `.pt` checkpoints match by size and Hugging Face LFS SHA256.
+
+> **Role in pipeline:** Public dataset/checkpoint registry and verified artifact source of truth
+
+---
+
 ## Documentation
 
 Docs are now powered by Docsify in `docs/`. View them locally with:
@@ -36,6 +86,7 @@ Or install once with `npm install -g docsify-cli` and run `docsify serve docs`. 
 ```text
 .
 |-- docs/                         # Docsify documentation site
+|-- huggingface/                  # Hugging Face migration record and verification report
 |-- notebooks/
 |   |-- training/                 # YOLO training notebook history
 |   `-- validation/               # Dataset and label verification notebooks
@@ -187,7 +238,7 @@ It is used for:
 * Artifact management (models, logs, results)
 * Ensuring reproducibility across training runs
 
-ClearML replaces ad-hoc storage solutions (e.g. Google Drive) as the **single source of truth** for trained models.
+ClearML replaces ad-hoc storage solutions (e.g. Google Drive) as the **experiment tracking and training-time model registry**. Hugging Face Hub now acts as the public source of truth for the selected migrated datasets and checkpoints listed below.
 
 > **Role in pipeline:** Experiment tracking, model registry, and reproducibility
 
@@ -219,9 +270,11 @@ flowchart TD
     A[Roboflow] --> B[Ultralytics YOLO]
     B --> C[Colab / SageMaker]
     C --> D["ClearML (Tracking & Registry)"]
-    D --> E[ONNX / PyTorch Models]
-    E --> F["Neural Magic (CPU Inference)"]
+    D --> E["Hugging Face Hub (Verified Datasets & Checkpoints)"]
+    E --> F[ONNX / PyTorch Models]
+    F --> G["Neural Magic (CPU Inference)"]
 ```
+
 # Session 2 — Essential AI Norms
 
 This session explains the **essential AI and training concepts** that appear *directly in the training configuration, logs, and output artifacts* of this repository.
