@@ -1,0 +1,153 @@
+{
+  "datasets": [
+    {
+      "repo_id": "the-khiem7/snakeaid-yolov12-300-masking",
+      "ok": true,
+      "expected_payload_files": 710,
+      "remote_payload_files": 710,
+      "remote_total_files": 711,
+      "expected_jpg": 353,
+      "actual_jpg": 353,
+      "actual_txt": 355,
+      "missing_count": 0,
+      "extra_count": 0,
+      "forbidden_count": 0,
+      "missing_sample": [],
+      "extra_sample": [],
+      "forbidden_sample": []
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-yolov12-5000-bbox",
+      "ok": true,
+      "expected_payload_files": 10586,
+      "remote_payload_files": 10586,
+      "remote_total_files": 10587,
+      "expected_jpg": 5291,
+      "actual_jpg": 5291,
+      "actual_txt": 5293,
+      "missing_count": 0,
+      "extra_count": 0,
+      "forbidden_count": 0,
+      "missing_sample": [],
+      "extra_sample": [],
+      "forbidden_sample": []
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-yolov12-5000-masking",
+      "ok": true,
+      "expected_payload_files": 9918,
+      "remote_payload_files": 9918,
+      "remote_total_files": 9919,
+      "expected_jpg": 4957,
+      "actual_jpg": 4957,
+      "actual_txt": 4959,
+      "missing_count": 0,
+      "extra_count": 0,
+      "forbidden_count": 0,
+      "missing_sample": [],
+      "extra_sample": [],
+      "forbidden_sample": []
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-yolov12-5291-bbox",
+      "ok": true,
+      "expected_payload_files": 10586,
+      "remote_payload_files": 10586,
+      "remote_total_files": 10587,
+      "expected_jpg": 5291,
+      "actual_jpg": 5291,
+      "actual_txt": 5293,
+      "missing_count": 0,
+      "extra_count": 0,
+      "forbidden_count": 0,
+      "missing_sample": [],
+      "extra_sample": [],
+      "forbidden_sample": []
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-yolov12-5291-bbox-complete",
+      "ok": true,
+      "expected_payload_files": 10584,
+      "remote_payload_files": 10584,
+      "remote_total_files": 10585,
+      "expected_jpg": 5291,
+      "actual_jpg": 5291,
+      "actual_txt": 5291,
+      "missing_count": 0,
+      "extra_count": 0,
+      "forbidden_count": 0,
+      "missing_sample": [],
+      "extra_sample": [],
+      "forbidden_sample": []
+    }
+  ],
+  "models": [
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12n-10e-300masking",
+      "ok": true,
+      "has_readme": true,
+      "pt_files": [
+        "SnakeAid_SnakeDetector_YOLOv12n_300Masking_10epoch_Khiem.pt"
+      ],
+      "expected_pt": "SnakeAid_SnakeDetector_YOLOv12n_300Masking_10epoch_Khiem.pt",
+      "size_ok": true,
+      "sha256_ok": true
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12n-10e-5000masking",
+      "ok": true,
+      "has_readme": true,
+      "pt_files": [
+        "SnakeAid_SnakeDetector_YOLOv12n_5000Masking_10epoch_Khiem.pt"
+      ],
+      "expected_pt": "SnakeAid_SnakeDetector_YOLOv12n_5000Masking_10epoch_Khiem.pt",
+      "size_ok": true,
+      "sha256_ok": true
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12s-17e-5000bbox",
+      "ok": true,
+      "has_readme": true,
+      "pt_files": [
+        "SnakeAid_SnakeDetector_YOLOv12s_5000Bbox_17epoch_Nhan.pt"
+      ],
+      "expected_pt": "SnakeAid_SnakeDetector_YOLOv12s_5000Bbox_17epoch_Nhan.pt",
+      "size_ok": true,
+      "sha256_ok": true
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12-v4-5000bbox",
+      "ok": true,
+      "has_readme": true,
+      "pt_files": [
+        "SnakeTraining_V4_YOLOv12_Khiem_Bbox5000_20251213_1828.pt"
+      ],
+      "expected_pt": "SnakeTraining_V4_YOLOv12_Khiem_Bbox5000_20251213_1828.pt",
+      "size_ok": true,
+      "sha256_ok": true
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12-v6-40e-10p-5291bbox-complete",
+      "ok": true,
+      "has_readme": true,
+      "pt_files": [
+        "SnakeTraining_V6_YOLOv12_Khiem_Bbox5291Complete_40epoch_10patience_20251215_0303.pt"
+      ],
+      "expected_pt": "SnakeTraining_V6_YOLOv12_Khiem_Bbox5291Complete_40epoch_10patience_20251215_0303.pt",
+      "size_ok": true,
+      "sha256_ok": true
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12-h2-120e-10p-5291bbox-complete",
+      "ok": true,
+      "has_readme": true,
+      "pt_files": [
+        "SnakeTraining_H2_YOLOv12_Hao_Bbox5291Complete_120epoch_10patience_20251215_1346.pt"
+      ],
+      "expected_pt": "SnakeTraining_H2_YOLOv12_Hao_Bbox5291Complete_120epoch_10patience_20251215_1346.pt",
+      "size_ok": true,
+      "sha256_ok": true
+    }
+  ],
+  "all_ok": true
+}

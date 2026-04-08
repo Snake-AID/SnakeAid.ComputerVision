@@ -1,0 +1,382 @@
+{
+  "account": "the-khiem7",
+  "visibility": "public",
+  "ignored_models": [
+    "SnakeAI_5k_120e.pt"
+  ],
+  "exclude_patterns": [
+    ".git/*",
+    ".git/**",
+    "*.cache",
+    "*.zip",
+    "__pycache__/*",
+    "__pycache__/**",
+    "HUGGINGFACE_PUSH_MANIFEST.json"
+  ],
+  "datasets": [
+    {
+      "repo_id": "the-khiem7/snakeaid-yolov12-300-masking",
+      "type": "dataset",
+      "title": "SnakeAid YOLOv12 300 Masking",
+      "local_dir": "SnakeAid-YOLOv12-300Masking",
+      "url": "https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-300-masking",
+      "counts": {
+        "train": {
+          "images": 309,
+          "labels": 309
+        },
+        "valid": {
+          "images": 29,
+          "labels": 29
+        },
+        "test": {
+          "images": 15,
+          "labels": 15
+        }
+      },
+      "uploadable_files": 1420,
+      "num_classes": 4,
+      "classes": [
+        "cap_nong",
+        "ho_mang_xiem",
+        "ran_hoa_can_van_dom",
+        "ran_sai_co"
+      ],
+      "roboflow": {
+        "workspace": "anh-by-i-n-nh-em",
+        "project": "my-first-project-hyskh",
+        "version": "3",
+        "license": "Public Domain",
+        "url": "https://universe.roboflow.com/anh-by-i-n-nh-em/my-first-project-hyskh/dataset/3"
+      },
+      "related_models": [
+        "the-khiem7/snakeaid-detect-yolov12n-10e-300masking"
+      ]
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-yolov12-5000-bbox",
+      "type": "dataset",
+      "title": "SnakeAid YOLOv12 5000 BBox",
+      "local_dir": "SnakeAid-YOLOv12-5000bbox",
+      "url": "https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5000-bbox",
+      "counts": {
+        "train": {
+          "images": 4795,
+          "labels": 4795
+        },
+        "valid": {
+          "images": 265,
+          "labels": 265
+        },
+        "test": {
+          "images": 231,
+          "labels": 231
+        }
+      },
+      "uploadable_files": 21172,
+      "num_classes": 22,
+      "classes": [
+        "cap_nia_bac",
+        "cap_nia_nam",
+        "cap_nong",
+        "ho_mang_chua",
+        "ho_mang_xiem",
+        "khiem_vach",
+        "luc_cuom",
+        "luc_nua",
+        "luc_xanh",
+        "luc_xanh_duoi_do",
+        "ran_cuom",
+        "ran_dai_lon",
+        "ran_hoa_can_van_dom",
+        "ran_hoa_co_do",
+        "ran_rao",
+        "ran_rao_trau",
+        "ran_ri_ca",
+        "ran_roi",
+        "ran_sai_co",
+        "ran_soc_dua",
+        "ran_soc_go",
+        "ran_trun"
+      ],
+      "roboflow": {
+        "workspace": "anh-by-i-n-nh-em",
+        "project": "my-first-project-hyskh",
+        "version": "6",
+        "license": "Public Domain",
+        "url": "https://universe.roboflow.com/anh-by-i-n-nh-em/my-first-project-hyskh/dataset/6"
+      },
+      "related_models": [
+        "the-khiem7/snakeaid-detect-yolov12s-17e-5000bbox",
+        "the-khiem7/snakeaid-detect-yolov12-v4-5000bbox"
+      ]
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-yolov12-5000-masking",
+      "type": "dataset",
+      "title": "SnakeAid YOLOv12 5000 Masking",
+      "local_dir": "SnakeAid-YOLOv12-5000Masking",
+      "url": "https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5000-masking",
+      "counts": {
+        "train": {
+          "images": 4563,
+          "labels": 4563
+        },
+        "valid": {
+          "images": 197,
+          "labels": 197
+        },
+        "test": {
+          "images": 197,
+          "labels": 197
+        }
+      },
+      "uploadable_files": 19836,
+      "num_classes": 21,
+      "classes": [
+        "cap_nia_bac",
+        "cap_nia_nam",
+        "cap_nong",
+        "ho_mang_chua",
+        "khiem_vach",
+        "luc_cuom",
+        "luc_nua",
+        "luc_xanh",
+        "luc_xanh_duoi_do",
+        "ran_cuom",
+        "ran_dai_lon",
+        "ran_hoa_can_van_dom",
+        "ran_hoa_co_do",
+        "ran_rao",
+        "ran_rao_trau",
+        "ran_ri_ca",
+        "ran_roi",
+        "ran_sai_co",
+        "ran_soc_dua",
+        "ran_soc_go",
+        "ran_trun"
+      ],
+      "roboflow": {
+        "workspace": "anh-by-i-n-nh-em",
+        "project": "my-first-project-hyskh",
+        "version": "4",
+        "license": "Public Domain",
+        "url": "https://universe.roboflow.com/anh-by-i-n-nh-em/my-first-project-hyskh/dataset/4"
+      },
+      "related_models": [
+        "the-khiem7/snakeaid-detect-yolov12n-10e-5000masking"
+      ]
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-yolov12-5291-bbox",
+      "type": "dataset",
+      "title": "SnakeAid YOLOv12 5291 BBox",
+      "local_dir": "SnakeAid-YOLOv12-5291BBox",
+      "url": "https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5291-bbox",
+      "counts": {
+        "train": {
+          "images": 4795,
+          "labels": 4795
+        },
+        "valid": {
+          "images": 265,
+          "labels": 265
+        },
+        "test": {
+          "images": 231,
+          "labels": 231
+        }
+      },
+      "uploadable_files": 10585,
+      "num_classes": 22,
+      "classes": [
+        "cap_nia_bac",
+        "cap_nia_nam",
+        "cap_nong",
+        "ho_mang_chua",
+        "ho_mang_xiem",
+        "khiem_vach",
+        "luc_cuom",
+        "luc_nua",
+        "luc_xanh",
+        "luc_xanh_duoi_do",
+        "ran_cuom",
+        "ran_dai_lon",
+        "ran_hoa_can_van_dom",
+        "ran_hoa_co_do",
+        "ran_rao",
+        "ran_rao_trau",
+        "ran_ri_ca",
+        "ran_roi",
+        "ran_sai_co",
+        "ran_soc_dua",
+        "ran_soc_go",
+        "ran_trun"
+      ],
+      "roboflow": {
+        "workspace": "anh-by-i-n-nh-em",
+        "project": "snakeaid",
+        "version": "7",
+        "license": "Public Domain",
+        "url": "https://universe.roboflow.com/anh-by-i-n-nh-em/snakeaid/dataset/7"
+      },
+      "related_models": []
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-yolov12-5291-bbox-complete",
+      "type": "dataset",
+      "title": "SnakeAid YOLOv12 5291 BBox Complete",
+      "local_dir": "SnakeAid-YOLOv12-5291Bbox-Complete",
+      "url": "https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5291-bbox-complete",
+      "counts": {
+        "train": {
+          "images": 4795,
+          "labels": 4795
+        },
+        "valid": {
+          "images": 265,
+          "labels": 265
+        },
+        "test": {
+          "images": 231,
+          "labels": 231
+        }
+      },
+      "uploadable_files": 10584,
+      "num_classes": 22,
+      "classes": [
+        "cap_nia_bac",
+        "cap_nia_nam",
+        "cap_nong",
+        "ho_mang_chua",
+        "ho_mang_xiem",
+        "khiem_vach",
+        "luc_cuom",
+        "luc_nua",
+        "luc_xanh",
+        "luc_xanh_duoi_do",
+        "ran_cuom",
+        "ran_dai_lon",
+        "ran_hoa_can_van_dom",
+        "ran_hoa_co_do",
+        "ran_rao",
+        "ran_rao_trau",
+        "ran_ri_ca",
+        "ran_roi",
+        "ran_sai_co",
+        "ran_soc_dua",
+        "ran_soc_go",
+        "ran_trun"
+      ],
+      "roboflow": {},
+      "related_models": [
+        "the-khiem7/snakeaid-detect-yolov12-v6-40e-10p-5291bbox-complete",
+        "the-khiem7/snakeaid-detect-yolov12-h2-120e-10p-5291bbox-complete"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12n-10e-300masking",
+      "type": "model",
+      "title": "SnakeAid Detect YOLOv12n 10e 300Masking",
+      "filename": "SnakeAid_SnakeDetector_YOLOv12n_300Masking_10epoch_Khiem.pt",
+      "url": "https://huggingface.co/the-khiem7/snakeaid-detect-yolov12n-10e-300masking",
+      "dataset_repo_id": "the-khiem7/snakeaid-yolov12-300-masking",
+      "dataset_url": "https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-300-masking",
+      "size_bytes": 5514906,
+      "size_mb": 5.26,
+      "sha256": "7ebce6cedcf6d5e5a1b57e1471182bf94c4f2b249dba66634554cc4d448deb19",
+      "architecture": "YOLOv12n",
+      "epochs": "10",
+      "patience": null,
+      "trained_by": "Khiem",
+      "version": null
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12n-10e-5000masking",
+      "type": "model",
+      "title": "SnakeAid Detect YOLOv12n 10e 5000Masking",
+      "filename": "SnakeAid_SnakeDetector_YOLOv12n_5000Masking_10epoch_Khiem.pt",
+      "url": "https://huggingface.co/the-khiem7/snakeaid-detect-yolov12n-10e-5000masking",
+      "dataset_repo_id": "the-khiem7/snakeaid-yolov12-5000-masking",
+      "dataset_url": "https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5000-masking",
+      "size_bytes": 5520922,
+      "size_mb": 5.27,
+      "sha256": "a2d336d1a35ad78c654ce3960d45016159d30feadd7ae0b7186e6358d2790707",
+      "architecture": "YOLOv12n",
+      "epochs": "10",
+      "patience": null,
+      "trained_by": "Khiem",
+      "version": null
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12s-17e-5000bbox",
+      "type": "model",
+      "title": "SnakeAid Detect YOLOv12s 17e 5000BBox",
+      "filename": "SnakeAid_SnakeDetector_YOLOv12s_5000Bbox_17epoch_Nhan.pt",
+      "url": "https://huggingface.co/the-khiem7/snakeaid-detect-yolov12s-17e-5000bbox",
+      "dataset_repo_id": "the-khiem7/snakeaid-yolov12-5000-bbox",
+      "dataset_url": "https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5000-bbox",
+      "size_bytes": 18648234,
+      "size_mb": 17.78,
+      "sha256": "230e2db84bbcd3f07951ab8d5ed2be271a951f66655d281bf760ea5b9afdcaf0",
+      "architecture": "YOLOv12s",
+      "epochs": "17",
+      "patience": null,
+      "trained_by": "Nhan",
+      "version": null
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12-v4-5000bbox",
+      "type": "model",
+      "title": "SnakeAid Detect YOLOv12 v4 5000BBox",
+      "filename": "SnakeTraining_V4_YOLOv12_Khiem_Bbox5000_20251213_1828.pt",
+      "url": "https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-v4-5000bbox",
+      "dataset_repo_id": "the-khiem7/snakeaid-yolov12-5000-bbox",
+      "dataset_url": "https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5000-bbox",
+      "size_bytes": 39802174,
+      "size_mb": 37.96,
+      "sha256": "b215c030b8f482dcaeed15e4838ad9e6d4c474beefbd330cc5e45cc4c893872b",
+      "architecture": "YOLOv12",
+      "epochs": null,
+      "patience": null,
+      "trained_by": "Khiem",
+      "version": "v4"
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12-v6-40e-10p-5291bbox-complete",
+      "type": "model",
+      "title": "SnakeAid Detect YOLOv12 v6 40e 10p 5291BBox Complete",
+      "filename": "SnakeTraining_V6_YOLOv12_Khiem_Bbox5291Complete_40epoch_10patience_20251215_0303.pt",
+      "url": "https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-v6-40e-10p-5291bbox-complete",
+      "dataset_repo_id": "the-khiem7/snakeaid-yolov12-5291-bbox-complete",
+      "dataset_url": "https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5291-bbox-complete",
+      "size_bytes": 39807166,
+      "size_mb": 37.96,
+      "sha256": "f0639f4aae2620d615222c935de5272801362915e26625afe755a835422790cd",
+      "architecture": "YOLOv12",
+      "epochs": "40",
+      "patience": "10",
+      "trained_by": "Khiem",
+      "version": "v6"
+    },
+    {
+      "repo_id": "the-khiem7/snakeaid-detect-yolov12-h2-120e-10p-5291bbox-complete",
+      "type": "model",
+      "title": "SnakeAid Detect YOLOv12 h2 120e 10p 5291BBox Complete",
+      "filename": "SnakeTraining_H2_YOLOv12_Hao_Bbox5291Complete_120epoch_10patience_20251215_1346.pt",
+      "url": "https://huggingface.co/the-khiem7/snakeaid-detect-yolov12-h2-120e-10p-5291bbox-complete",
+      "dataset_repo_id": "the-khiem7/snakeaid-yolov12-5291-bbox-complete",
+      "dataset_url": "https://huggingface.co/datasets/the-khiem7/snakeaid-yolov12-5291-bbox-complete",
+      "size_bytes": 40556908,
+      "size_mb": 38.68,
+      "sha256": "c6178187ef0ea1492d056db0270fe3cd0ce39ca9c77835ba0f090851d3a0863c",
+      "architecture": "YOLOv12",
+      "epochs": "120",
+      "patience": "10",
+      "trained_by": "Hao",
+      "version": "h2"
+    }
+  ]
+}
